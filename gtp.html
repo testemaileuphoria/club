@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Club Euphoria</title>
+</head>
+<body>
+
+    <div class="video-background">
+        <video autoplay muted loop>
+            <source src="Restaurant.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    
+    <header>
+        <h1>Club Euphoria Online Store</h1>
+        <a href="#" id="cart-link" onclick="openCartModal()" style="color: green;">Cart (0)</a>
+<button id="view-cart-btn" onclick="viewCart()" style="color: green;">View Cart</button>
+
+    </header>
+    <main>
+        <div class="product">
+            <img src="images/dish-1.jpg" alt="Product 1">
+            <h2>Chicken Pepper soup</h2>
+            <p>Price: $2000</p>
+            <button class="add-to-cart-btn" data-product="Chicken Pepper soup" data-price="2000">Add to Cart</button>
+            <div class="quantity-buttons">
+                <button class="quantity-btn" data-product="Chicken Pepper soup" data-action="increase">+</button>
+                <button class="quantity-btn" data-product="Chicken Pepper soup" data-action="decrease">-</button>
+            </div>
+        </div>
+        
+        <div class="product">
+            <img src="images/home-img-2.png" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $15</p>
+            <button class="add-to-cart-btn" data-product="Product 2" data-price="15">Add to Cart</button>
+            <div class="quantity-buttons">
+                <button class="quantity-btn" data-product="Chicken Pepper soup" data-action="increase">+</button>
+                <button class="quantity-btn" data-product="Chicken Pepper soup" data-action="decrease">-</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="images/dish-1.jpg" alt="Product 3">
+            <h2>Product 34</h2>
+            <p>Price: $20</p>
+            <button class="add-to-cart-btn" data-product="Product 3" data-price="20">Add to Cart</button>
+        </div>
+        <!-- Add more product items here -->
+        <div class="product">
+            <img src="images/home-img-2.png" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $15</p>
+            <button class="add-to-cart-btn" data-product="Product 2" data-price="15">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/home-img-2.png" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $15</p>
+            <button class="add-to-cart-btn" data-product="Product 2" data-price="15">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/home-img-2.png" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $15</p>
+            <button class="add-to-cart-btn" data-product="Product 2" data-price="15">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/home-img-2.png" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $15</p>
+            <button class="add-to-cart-btn" data-product="Product 2" data-price="15">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/home-img-2.png" alt="Product 2">
+            <h2>Product 2</h2>
+            <p>Price: $15</p>
+            <button class="add-to-cart-btn" data-product="Product 2" data-price="15">Add to Cart</button>
+        </div>
+        <div class="quantity-buttons">
+            <button class="quantity-btn" data-product="${item.product}" data-action="increase">+</button>
+            <button class="quantity-btn" data-product="${item.product}" data-action="decrease">-</button>
+        </div>
+    </main>
+    <button id="place-order-top-btn" class="place-order-btn" style="display: none;">Place Order</button>
+    <button id="place-order-bottom-btn" class="place-order-btn">Place Order</button>
+    <script src="script.js"></script>
+    
+        </div>
+        </body>
+        </html>
