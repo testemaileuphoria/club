@@ -40,7 +40,23 @@ main {
 .product img {
     max-width: 100%;
     height: auto;
-    color: #27ae60;
+    position: relative; /* Needed for absolute positioning of pseudo-element */
+}
+
+.product img::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #91248f;
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.2s;
+}
+
+.product:hover img::after {
+    opacity: 1; /* Show the overlay on hover */
 }
 
 .add-to-cart-btn {
